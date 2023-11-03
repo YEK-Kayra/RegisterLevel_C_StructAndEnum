@@ -1,6 +1,5 @@
 #include<stdio.h>
 
-
 /*
  Çamaşır makinesi; hijyen, perde, pamuklu, günlük, ekonomik ve kapalı modlarından oluşuyor.
  Bu modlar da kendi içinde 3 farklı parametreden oluşuyor. Bu parametreler de sıcaklık, devir ve saat bilgileridir.
@@ -168,6 +167,15 @@ MakineProgramOlusturucu program_1; /*
 			0 ve 1. bitlere [1 1] yazıp bu değeri tutan değişkeni(program_1.Ozellikler.SaatVerisi) yukarıdaki gibi "<<" oparatörü ile ilgili değeri 6 bit kaydırınca
 			o değeri oluşturan [1 1] bitleri de 6 bit kayıyor ve 6. bitten itibaren yer kaplamaya başlıyor. 
 			*/ 
+
+
+			HAL_I2C_Mem_Write(&i2c1, 0x77 , 0x10, 1, &registerDegerTutucu, 1, 1000);
+			/*
+			HAL_I2C_Mem_Write komutu stm32'nin HAL kütüphanesinde bulunup ı2c haberleşmesi yapması üzerine tasarlanmıştır.
+			Çalışma yapısında asıl değinmek istediğim şey ==> 0x77 chip'in genel adresi
+			*/
+			
+																
 /*
 Bu bilgiler yazılınca x ler ile gösterilen adres bölgesi şuna döner ==> |1|1|1|0|0|0|0|1| artık bunu sensörün
 içerisine gönderince o seçilen parametreler doğrultusunda işlem yapmaya başlayacaktır.
