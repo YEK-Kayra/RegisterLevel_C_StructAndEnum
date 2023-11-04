@@ -1,4 +1,4 @@
-# Register Seviye C ile Struct ve Enum kullanımı
+# Register Seviye C ile Struct ve Enum Kullanımı
  Enum ve struct yapılarıyla gömülü sistemler alanında nasıl kod parçaları ekleriz.
 
 
