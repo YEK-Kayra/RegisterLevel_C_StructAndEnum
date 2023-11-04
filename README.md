@@ -2,8 +2,6 @@
  How we can write program at c by using enum and struct expressions.
 
 ## Notes
--Almost all code parts are Turkish now, But i will add english code comments in the comming days.
-
 -And also i will show the struct variables on the ram. And explain the relation between using global and static methods like sending variable by using its ram address.
 
 ### REGISTER TABLE OF SENSOR BMP280
